@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <!--------------Favicon----------------->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--------------Bootstrap----------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!--------------Google Fonts----------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--------------CSS style----------------->
+  <link rel="stylesheet" href="./styles.css">
+  
+</head>
+<body>
+
+  <header class="d-flex flex-row justify-content-between align-items-center p-3 py-lg-5 px-lg-5">
+    <img src="./images/logo.svg" alt="logo" class="header__logo img-fluid">
+
+    <ul class="nav">
+
+      <li class="nav-item">
+        <a class="nav-link"  href="#">Features</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Team</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link">Sign In</a>
+      </li>
+
+    </ul>
+
+  </header>
+
+  <main>
+
+    <section class="container-fluid first__section d-flex flex-column flex-md-row-reverse mb-5">
+
+      <figure class="section__container__fluid"><img src="./images/illustration-1.svg" alt="section img" class="section__image img-fluid"></figure>
+
+      <div class="container-fluid section__text__container text-center text-md-start">
+        <h1 class="section__title mt-4 mb-4">All your files in one secure location, accessible anywhere.</h1>
+        <p class="section__paragraph mb-3">
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+        </p>
+
+        <form class="d-flex  flex-column flex-lg-row section__form" role="search" id="first__section__form">
+
+          <input class="form-control me-2 py-2" type="search" placeholder="Enter your email" aria-label="Search">
+  
+          <button class="btn btn-primary py-2" type="submit">Get Started</button>
+  
+        </form>
+
+      </div>
+    </section>
+
+    <section class="container-fluid second__section d-flex flex-column flex-md-row-reverse pb-5">
+
+      <figure class="section__container__fluid"><img src="./images/illustration-2.svg" alt="section img" class="section__image img-fluid"></figure>
+
+      <div class="container-fluid section__text__container text-start">
+
+        <h1 class="section__title mt-4 mb-3">Stay productive, wherever you are</h1>
+
+        <p class="section__paragraph mb-4">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+
+        <button type="button" class="btn section__btn">See how Fylo works <i class="bi bi-arrow-right-circle"></i></button>
+      
+        <div class="container section__testimony__container mt-5 p-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+
+          <p class="testimony__paragraph">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="person__info d-flex flex-row">
+            <img src="./images/avatar-testimonial.jpg" alt="avatar-testimonial" class="person__photo img-fluid">
+            <h2 class="person__name d-flex flex-column justify-content-center text-start">
+              Kyle Burton
+              <span class="person__position">Founder & CEO, Huddle</span>
+
+            </h2>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container-fluid third__section d-flex flex-column flex-md-row text-center text-md-start">
+
+      <div class="container section__text__container">
+        <h1 class="section__title mt-4 mb-3">Get early access today</h1>
+        <p class="section__paragraph mb-4">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+
+      <form class="d-flex flex-column section__form" role="search" id="third__section__form">
+
+        <input class="form-control me-2 py-2" type="search" placeholder="Enter your email" aria-label="Search">
+
+        <button class="btn btn-primary py-2" type="submit">Get Started For Free</button>
+
+      </form>
+
+    </section>
+  </main>
+
+
+  <footer class="px-3 px-md-5 py-5 py-lg-5 d-flex flex-column justify-content-between">
+
+    <img src="./images/logo (copy).svg" alt="logo" class="footer__logo img-fluid">
+
+    <section class="footer__contact__section d-flex flex-column flex-md-row justify-content-between justify-content-lg-center align-items-start">
+
+      <div class="contact__section">
+
+        <p class="section__paragraph d-flex" id="number"><i class="bi bi-telephone-outbound-fill"></i>+1-543-123-4567</p>
+        <p class="section__paragraph d-flex" id="email"><i class="bi bi-envelope-fill"></i>example@fylo.com</p>
+
+      </div>
+
+      <div class="contact__section">
+
+        <ul class="about__section__nav__bar d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-start">
+          
+          <li class="footer__nav__bar__item">
+            About Us
+            <ul class="second__nav__bar d-flex flex-column justify-content-between mt-3">
+              <li class="second__nav__bar__item">Jobs</li>
+              <li class="second__nav__bar__item">Press</li>
+              <li class="second__nav__bar__item">Blog</li>
+            </ul>
+
+          </li>
+
+          <li class="footer__nav__bar__item">
+            Contact Us
+            <ul class="second__nav__bar d-flex flex-column justify-content-between mt-3">
+              <li class="second__nav__bar__item">Terms</li>
+              <li class="second__nav__bar__item">Privacy</li>
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="contact__section d-flex flex-row text-center justify-content-center align-items-center" id="sotial__media__icon">
+        <i class="bi bi-facebook media__icon"></i>
+        <i class="bi bi-twitter media__icon"></i>
+        <i class="bi bi-instagram media__icon"></i>
+      </div>
+    </section>
+
+
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Eduardo Ruiz</a>.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root{
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGray: hsl(0, 0%, 75%);
+
+  /*Font family*/
+
+  --RaleWay__400__700: 'Raleway', sans-serif;
+  --OpenSans__400: 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+/*-------header----------*/
+
+.header__logo {
+  width: 85px;
+}
+
+.nav-link {
+  font-size: 0.85em;
+  color: var(--VeryDarkBlue);
+  font-family: var(--RaleWay__400__700);
+  font-weight: 400;
+}
+
+/*-----------main------------*/
+
+
+
+/*----------common styles-------*/
+
+.section__title {
+  font-size: 1.5em;
+  color: var(--VeryDarkBlue);
+  font-family: var(--RaleWay__400__700);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.section__paragraph {
+  color: var(--VeryDarkBlue);
+  font-family: var(--OpenSans__400);
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.section__form {
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.section__form button {
+  color: white;
+  font-size: 0.85em;
+  font-weight: 700;
+  font-family: var(--RaleWay__400__700);
+}
+
+.section__form input {
+  border-radius: 0px;
+}
+
+/*----------first section--------*/
+.first__section {
+  margin-top: 80px;
+}
+
+/*----------second section---------*/
+.second__section {
+  margin-top: 80px;
+  background-image: url("./images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 50% top 0%;
+}
+
+.section__btn {
+  border: none;
+  color: var(--ModerateCyan);
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--ModerateCyan);
+  
+}
+
+.section__btn i {
+  color: var(--ModerateCyan);
+}
+
+.section__testimony__container {
+  width: 95%;
+  margin: auto;
+  display: block;
+  padding: 25px;
+  background-image: url("./images/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: top 30px left 30px;
+
+}
+
+.testimony__paragraph {
+  font-size: 0.75em;
+  line-height: 1.7;
+  color: var(--VeryDarkBlue);
+  font-family: var(--OpenSans__400);
+}
+
+.person__info {
+  gap: 10px;
+}
+
+.person__photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.person__name {
+  color: var(--VeryDarkBlue);
+  font-family: var(--RaleWay__400__700);
+  font-size: 0.8em;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.person__position {
+  font-size: 0.85em;
+  font-weight: 400;
+}
+
+/*---------third section -------------*/
+
+.third__section {
+  padding: 60px 40px;
+  background-color: var(--DesaturatedBlue);
+}
+
+.third__section h1 {
+  color: var(--LightGrayishBlue);
+}
+
+.third__section p {
+  color: var(--LightGrayishBlue);
+}
+
+/*------------footer------------------*/
+
+footer {
+  gap: 2.5em;
+  background-color: var(--VeryDarkBlue);
+  color: var(--LightGrayishBlue);
+  font-family: var(--OpenSans__400);
+  font-weight: 400;
+  font-size: 0.95em;
+}
+
+.footer__logo {
+  width: 180px;
+}
+
+.footer__contact__section {
+  gap: 1.5em;
+}
+
+#number, #email {
+  color: var(--LightGrayishBlue);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.about__section__nav__bar, .second__nav__bar {
+  list-style: none;
+  padding-left: 0%;
+  gap: 1.5em;
+}
+
+
+#sotial__media__icon {
+  gap: 1.5em;
+  align-self: center;
+}
+
+.second__nav__bar__item {
+  cursor: pointer;
+}
+
+.second__nav__bar__item:hover {
+  color: var(--BrightBlue);
+}
+
+#sotial__media__icon i {
+  cursor: pointer;
+}
+
+#sotial__media__icon i:hover {
+  color: var(--BrightBlue);
+}
+
+@media only screen and (min-width: 992px) {
+
+  .header__logo {
+    width: 160px;
+  }
+
+  .first__section, .second__section, .third__section {
+    padding-left: 48px;
+    padding-right: 48px;
+    gap: 10%;
+  }
+
+  .section__form button {
+    width: 40%;
+  }
+
+  .third__section .section__text__container {
+    width: 55%;
+  }
+
+  .third__section form {
+    width: 40%;
+  }
+
+  .section__title {
+    font-size: 2.6em;
+  }
+
+  .section__testimony__container {
+    width: 80%;
+  }
+
+  #sotial__media__icon {
+    gap: 1.5em;
+    align-self: flex-start;
+  }
+
+  .footer__contact__section {
+    gap: 20%;
+  }
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
